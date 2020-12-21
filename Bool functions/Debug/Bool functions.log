@@ -1,0 +1,7 @@
+﻿  Bool functions.cpp
+  Expressions.cpp
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(65): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(107): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+  Function.cpp
+  Создание кода...
+  Bool functions.vcxproj -> D:\Progs\VisualStudioProjects\BoolFunctions\Bool functions\Debug\Bool functions.exe

@@ -1,0 +1,72 @@
+﻿  Bool functions.cpp
+  string_view is only available with C++17 or later.
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2061: синтаксическая ошибка: идентификатор "string_view"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2061: синтаксическая ошибка: идентификатор "string_view"
+  Expressions.cpp
+  string_view is only available with C++17 or later.
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2061: синтаксическая ошибка: идентификатор "string_view"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2061: синтаксическая ошибка: идентификатор "string_view"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(21): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(21): error C2065: string_view: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(21): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "prepared"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(21): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(25): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(26): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(28): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(31): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(31): error C2061: синтаксическая ошибка: идентификатор "string_view"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(36): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(41): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(50): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(53): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(59): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(62): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(65): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(66): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(69): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(69): error C2660: Expression::check_parentheses: функция не принимает 1 аргументов
+  d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): note:  см. объявление "Expression::check_parentheses"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(70): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(72): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(75): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(75): error C2660: Expression::check_parentheses: функция не принимает 1 аргументов
+  d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): note:  см. объявление "Expression::check_parentheses"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(76): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(78): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(84): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(90): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(93): error C2065: left_to_parse: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(107): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(123): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(123): error C2065: string_view: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(123): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "str"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(124): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(124): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(227): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(227): error C2065: string_view: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(227): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "prepared"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(227): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(231): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(232): error C2065: prepared: необъявленный идентификатор
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(234): error C2065: prepared: необъявленный идентификатор
+  Function.cpp
+  string_view is only available with C++17 or later.
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(43): error C2061: синтаксическая ошибка: идентификатор "string_view"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2039: string_view: не является членом "std"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream(14): note:  см. объявление "std"
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.h(49): error C2061: синтаксическая ошибка: идентификатор "string_view"
+  Создание кода...
