@@ -25,7 +25,7 @@ private:
 
 	//Operations
 	static const char* operation_tokens[];
-	static int operations_count;
+	static const int operations_count;
 public:
 	//Constructors and Destructors
 	~Expression();

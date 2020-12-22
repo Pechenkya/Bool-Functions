@@ -2,7 +2,7 @@
 
 //Static variables (Operations)
 const char* Expression::operation_tokens[] = {"0", "1", "!", "OR", "->", "<-", "<->", "AND", "XOR", "NOR", "NAND"};
-int Expression::operations_count = 11;
+const int Expression::operations_count = 11;
 //
 
 //Parsing and building tree
@@ -98,7 +98,7 @@ void Expression::parse_recursive(Node * current, std::string_view left_to_parse)
 
 inline uint8_t Expression::is_binary_operation(const char* a)
 {
-	if (*a < 65 || *a > 90)
+	if ((*a < 65 || *a > 90) && *a != '<' && *a != '-')
 		return -1;
 
 	bool found = true;
@@ -202,6 +202,10 @@ bool Expression::calculate_recursive(Node * current, const std::map<std::string,
 		bool b = calculate_recursive(current->right, values);
 		return (a && !b) || (b && !a);
 	}
+	case 9:
+		return !(calculate_recursive(current->left, values) || calculate_recursive(current->right, values));
+	case 10:
+		return !(calculate_recursive(current->left, values) && calculate_recursive(current->right, values));
 	default:
 		return values.at(current->token);
 	}

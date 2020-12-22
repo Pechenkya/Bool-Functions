@@ -53,11 +53,12 @@ Function::~Function()
 void Function::print_table()
 {
 	std::vector<bool> var_value_vector(num_of_variables);
-	for (size_t i = 0; i < std::pow(2, num_of_variables); ++i)
+	size_t table_h = 1u << num_of_variables;
+	for (size_t i = 0; i < table_h; ++i)
 	{
 		for (size_t j = 0; j < num_of_variables; ++j)
 		{
-			var_value_vector[j] = i & (size_t)std::pow(2, (num_of_variables - 1 - j));
+			var_value_vector[j] = i & (1u << num_of_variables - 1 - j);
 			std::cout << var_value_vector[j] << ' ';
 		}
 		std::cout << "| " << basic_expression->calculate_expression(var_value_vector) << std::endl;
@@ -70,10 +71,11 @@ std::string Function::build_FDNF()
 	std::vector<bool> var_value_vector(num_of_variables);
 
 	bool f1 = true;
-	for (size_t i = 0; i < std::pow(2, num_of_variables); ++i)
+	size_t table_h = 1u << num_of_variables;
+	for (size_t i = 0; i < table_h; ++i)
 	{
 		for (size_t j = 0; j < num_of_variables; ++j)
-			var_value_vector[j] = i & (size_t)std::pow(2, (num_of_variables - 1 - j));
+			var_value_vector[j] = i & (1u << num_of_variables - 1 - j);
 
 		if (basic_expression->calculate_expression(var_value_vector))
 		{
@@ -113,10 +115,11 @@ std::string Function::build_FCNF()
 	std::vector<bool> var_value_vector(num_of_variables);
 
 	bool f1 = true;
-	for (size_t i = 0; i < std::pow(2, num_of_variables); ++i)
+	size_t table_h = 1u << num_of_variables;
+	for (size_t i = 0; i < table_h; ++i)
 	{
 		for (size_t j = 0; j < num_of_variables; ++j)
-			var_value_vector[j] = i & (size_t)std::pow(2, (num_of_variables - 1 - j));
+			var_value_vector[j] = i & (1u << num_of_variables - 1 - j);
 
 		if (!basic_expression->calculate_expression(var_value_vector))
 		{
@@ -158,11 +161,12 @@ std::string Function::build_ANF()
 	{
 		std::vector<bool> var_value_vector(num_of_variables);
 
-		for (size_t i = 0; i < std::pow(2, num_of_variables); ++i)
+		size_t table_h = 1u << num_of_variables;
+		for (size_t i = 0; i < table_h; ++i)
 		{
 			for (size_t j = 0; j < num_of_variables; ++j)
 			{
-				var_value_vector[j] = i & (size_t)std::pow(2, (num_of_variables - 1 - j));
+				var_value_vector[j] = i & (1u << num_of_variables - 1 - j);
 			}
 			calc_vec[i] = basic_expression->calculate_expression(var_value_vector);
 		}

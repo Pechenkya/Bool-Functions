@@ -1,7 +1,6 @@
-﻿  Bool functions.cpp
-  Expressions.cpp
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(65): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\expressions.cpp(107): warning C4267: инициализация: преобразование из "size_t" в "uint8_t"; возможна потеря данных
-  Function.cpp
-  Создание кода...
+﻿  Function.cpp
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(61): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(78): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(122): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(169): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
   Bool functions.vcxproj -> D:\Progs\VisualStudioProjects\BoolFunctions\Bool functions\Debug\Bool functions.exe

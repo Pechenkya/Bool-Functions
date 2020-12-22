@@ -19,23 +19,27 @@
 	Input example:
 	f(x, y, z) = x XOR (y AND z) 
 */
+
 int main()
 {
-	std::string base_form = "f(x, y, z) = x XOR y XOR z";
+	std::string base_form = "f(x, y, z) = (x -> y) NAND z";
 	std::cout << base_form << std::endl;
 	Function func(base_form);
 	func.print_table();
 
+	//Building FDNF
 	std::string FDNF = func.build_FDNF();
 	std::cout << FDNF << std::endl;
 	Function func2(FDNF);
 	func2.print_table();
 
+	//Building FCNF
 	std::string FCNF = func.build_FCNF();
 	std::cout << FCNF << std::endl;
 	Function func3(FCNF);
 	func3.print_table();
 
+	//Building ANF
 	std::string ANF = func.build_ANF();
 	std::cout << ANF << std::endl;
 	Function func4(ANF);
