@@ -172,7 +172,22 @@ std::string Function::build_ANF()
 		}
 	}
 	
-	ANF_recursive(calc_vec, 0, calc_vec.size() - 1);
+	//Old recursive function
+	//Can be used for tests
+	//ANF_recursive(calc_vec, 0, calc_vec.size() - 1);
+
+	//Iterative algorithm
+	for (size_t dim = 2; dim <= calc_vec.size(); dim *= 2)
+	{
+		for (size_t prt = 0; prt < dim / 2; ++prt)
+		{
+			for (size_t jmp = calc_vec.size() / dim, 
+				i = prt * jmp * 2; i < prt * jmp * 2 + jmp; ++i)
+			{
+				calc_vec[i + jmp] = (calc_vec[i + jmp] && !calc_vec[i]) || (!calc_vec[i + jmp] && calc_vec[i]);
+			}
+		}
+	}
 
 	bool f1 = true;
 

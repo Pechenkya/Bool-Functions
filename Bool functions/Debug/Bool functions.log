@@ -1,6 +1,2 @@
-﻿  Function.cpp
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(61): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(78): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(122): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-d:\progs\visualstudioprojects\boolfunctions\bool functions\bool functions\function.cpp(169): warning C4554: "<<": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+﻿  Bool functions.cpp
   Bool functions.vcxproj -> D:\Progs\VisualStudioProjects\BoolFunctions\Bool functions\Debug\Bool functions.exe

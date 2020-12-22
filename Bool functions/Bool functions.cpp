@@ -22,7 +22,7 @@
 
 int main()
 {
-	std::string base_form = "f(x, y, z) = (x -> y) NAND z";
+	std::string base_form = "f(x, y, z) = (z NAND x) XOR (y AND z)";
 	std::cout << base_form << std::endl;
 	Function func(base_form);
 	func.print_table();
