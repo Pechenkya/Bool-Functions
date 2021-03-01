@@ -41,8 +41,6 @@ public:
 	std::string get_name(size_t index);
 	//
 private:
-
-
 	//Recursive methods
 	void parse_recursive(Node* current, std::string_view left_to_parse);
 	bool calculate_recursive(Node * current, const std::map<std::string, bool>& values);

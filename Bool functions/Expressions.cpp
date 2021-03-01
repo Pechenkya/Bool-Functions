@@ -1,7 +1,7 @@
 #include "Expressions.h"
 
 //Static variables (Operations)
-const char* Expression::operation_tokens[] = {"0", "1", "!", "OR", "->", "<-", "<->", "AND", "XOR", "NOR", "NAND"};
+const char* Expression::operation_tokens[] = {"0", "1", "!", "OR", "->", "<->", "<-", "AND", "XOR", "NOR", "NAND"};
 const int Expression::operations_count = 11;
 //
 
@@ -87,7 +87,11 @@ void Expression::parse_recursive(Node * current, std::string_view left_to_parse)
 				current->token = operation_tokens[2][0];
 				current->right->left = nullptr;
 				current->right->right = nullptr;
-				current->right->token = left_to_parse.substr(1, left_to_parse.length());
+				if (check_parentheses(left_to_parse.substr(1)))
+					parse_recursive(current->right, left_to_parse.substr(2, str_sz - 2));
+				else
+					parse_recursive(current->right, left_to_parse.substr(1, str_sz - 1));
+				//current->right->token = left_to_parse.substr(1, left_to_parse.length());
 			}
 			else
 				current->token = left_to_parse.substr(0, left_to_parse.length());
@@ -184,6 +188,8 @@ bool Expression::calculate_recursive(Node * current, const std::map<std::string,
 		return 1;
 	}
 	case 5:
+		return calculate_recursive(current->left, values) == calculate_recursive(current->right, values);
+	case 6:
 	{
 		bool a = calculate_recursive(current->left, values);
 		bool b = calculate_recursive(current->right, values);
@@ -192,8 +198,6 @@ bool Expression::calculate_recursive(Node * current, const std::map<std::string,
 
 		return 1;
 	}
-	case 6:
-		return calculate_recursive(current->left, values) == calculate_recursive(current->right, values);
 	case 7:
 		return calculate_recursive(current->left, values) && calculate_recursive(current->right, values);
 	case 8:
