@@ -38,6 +38,11 @@ void Expression::parse_recursive(Node * current, std::string_view left_to_parse)
 
 	for (size_t index = 0; index < str_sz; ++index)
 	{
+		while (left_to_parse[index] == operation_tokens[2][0])
+		{
+			index++;
+		}
+
 		if (left_to_parse[index] == '(')
 		{
 			opened_parentheses++;
@@ -56,10 +61,10 @@ void Expression::parse_recursive(Node * current, std::string_view left_to_parse)
 			++index;
 		}
 
-		while (is_binary_operation(&left_to_parse[index]) == 255 && index < str_sz - 1)
+		while (index < str_sz - 1 && is_binary_operation(&left_to_parse[index]) == 255)
 			index++;
 
-		uint8_t op_index = is_binary_operation(&left_to_parse[index]);
+		uint8_t op_index = is_binary_operation(&left_to_parse[index % str_sz]); // Can use mod cause index surely must be less then str_sz, if not - it's ! op
 		if (op_index != 255)
 		{
 			uint8_t op_len = strlen(operation_tokens[op_index]);
@@ -88,7 +93,7 @@ void Expression::parse_recursive(Node * current, std::string_view left_to_parse)
 				current->right->left = nullptr;
 				current->right->right = nullptr;
 				if (check_parentheses(left_to_parse.substr(1)))
-					parse_recursive(current->right, left_to_parse.substr(2, str_sz - 2));
+					parse_recursive(current->right, left_to_parse.substr(2, str_sz - 3));
 				else
 					parse_recursive(current->right, left_to_parse.substr(1, str_sz - 1));
 				//current->right->token = left_to_parse.substr(1, left_to_parse.length());

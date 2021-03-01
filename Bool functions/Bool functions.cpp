@@ -19,12 +19,12 @@
 	Input example:
 	f(x, y, z) = x XOR (y AND z)
 
-	TODO: Fix negation of par formula like: !(p -> !r)
+	TODO: Fix negation of par formula like: !(p -> !r) // fixed 01.03.2021
 */
 
 int main()
 {
-	std::string base_form = "f(p, q, r, s) = ((p OR q)->(r XOR !s)) AND (r <-> (p AND s)) AND (q -> (!r XOR !p)) AND ((s XOR r) AND q)";
+	std::string base_form = "f(p, q, r, s) = !(p -> !r)";
 	std::cout << base_form << std::endl;
 	Function func(base_form);
 	func.print_table();
